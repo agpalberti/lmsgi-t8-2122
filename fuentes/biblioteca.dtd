@@ -1,9 +1,6 @@
-<!ELEMENT BIBLIOTECA (LIBRO+) >
-<!ELEMENT LIBRO (TITULO, AUTOR*, ANYO?, EDITORIAL?) >
-
-<!ATTLIST LIBRO COD CDATA #REQUIRED >
-
-<!ELEMENT AUTOR (#PCDATA) >
-<!ELEMENT TITULO (#PCDATA) >
-<!ELEMENT EDITORIAL (#PCDATA) >
-<!ELEMENT ANYO (#PCDATA) >
+<!ELEMENT notas (nota+)>
+<!ELEMENT nota (fec_crea,contenido,fec_recordar)>
+<!ELEMENT fec_crea (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ELEMENT fabricante (#PCDATA)>
+<!ELEMENT fec_recordar (#PCDATA)>
